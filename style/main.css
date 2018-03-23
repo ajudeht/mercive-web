@@ -1,0 +1,221 @@
+*{
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-kerning: auto;
+}
+
+html{
+font-family: Roboto, sans-serif;
+-webkit-text-size-adjust: 100%;
+}
+
+body{
+  margin: 0;
+  overflow-x: hidden;
+  font-size: 16px;
+  background-color: #0d0d14;
+}
+
+.header-fixed{
+  width: 100%;
+  top: 0;
+z-index: 200;
+transition: background-color .1s ease-in-out;
+}
+
+.header-logo{
+  height: 1.5em;
+  position: relative;
+  top: .87em;
+  margin-right: .35em;
+  margin-top: -.9em;
+  float: left;
+}
+
+.header-fixed.color{
+background-color: #111322f7;
+}
+
+.header-fixed.color .header-logo{
+display: inline-block;
+}
+
+.header-inner{
+  color: white;
+  font-family: "Noto Sans";
+  font-weight: 800;
+  padding: 1em !important;
+  padding-top: 1.25em !important;
+  padding-bottom: 1.25em !important;
+  text-align: center;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.header-section{
+text-decoration: none;
+color: white
+}
+
+.body-main{
+  max-width: 1300px;
+  margin: 0px auto;
+  padding: 2em;
+}
+
+.button-header{
+  position: relative;
+  top: -.1em;
+  font-size: .85em !important;
+  padding: .2em;
+  padding-bottom: .275em;
+  padding-left: .5em;
+  padding-right: .5em;
+  border-radius: 3px;
+  text-decoration: none;
+  margin: .25em;
+  cursor: pointer;
+  background-color: #2e2e4c;
+  color: #ffffff !important;
+}
+
+.body-content{
+/* background-color: white;
+color: black; */
+width: 100%;
+}
+
+.landing-full{
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.landing-video{
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  min-height: 200%;
+  min-width: 100%;
+  z-index: 0;
+}
+
+.landing-content{
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  z-index: 100;
+  text-align: center;
+  color: white;
+
+
+}
+
+p{
+font-size: 1.25em;
+line-height: 1.5em;
+}
+
+.mercive-logo{
+  margin-bottom: 1em;
+  text-transform: uppercase;
+  height: 160px;
+}
+.header-text{
+  color: white;
+      margin-bottom: 1.5em;
+      font-size: 2.25em;
+      font-family: "Bebas Neue";
+}
+
+.header-nav{
+
+float: right;
+
+}
+
+.hero-mercive{
+  color: white;
+  background: linear-gradient(#fdcf77 -100%, #f77768);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+
+.header-nav a{
+  font-weight: 200;
+      position: relative;
+      top: -.025em;
+      color: #a0a3ae;
+      font-size: .90em;
+      text-decoration: none;
+      margin-right: .35em;
+}
+
+.header-nav a:hover{
+  text-decoration: underline;
+}
+
+.header-nav a.active{
+  font-weight: 300;
+  color: white;
+  text-decoration: underline;
+  text-decoration-color: #ff8156;
+}
+
+.button{
+padding: .6em;
+padding-left: 1em;
+padding-right: 1em;
+border-radius: 3px;
+text-decoration: none;
+margin: .25em;
+cursor: pointer;
+}
+
+.button.outline--white{
+border: 2px solid white;
+background-color: transparent;
+color: white;
+}
+
+h1{
+  font-family: "Bebas Neue";
+  font-weight: 300;
+  font-size: 2.5em;
+}
+
+h2,h3,h4,h5,h6{
+  font-family: "Work Sans";
+  font-weight: 300;
+  letter-spacing: -1.2px;
+}
+
+.hero-message{
+  font-size: 3.5em;
+  padding-top: 1em;
+  font-family: "Bebas Neue";
+    letter-spacing: -1.2px;
+  font-weight: 300;
+    padding-bottom: .55em;
+  text-align: center;
+}
+
+@media (max-width: 500px) {
+
+.hero-message{
+  padding: .5em;
+}
+
+}
